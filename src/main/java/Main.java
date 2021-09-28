@@ -21,6 +21,7 @@ public class Main {
 Lambo lambo = new Lambo(music, engine12v);
 Viper viper = new Viper(music, new FSDEngine());
 Bus22 bus22 = new Bus22(magic, new DieselEngine());
+Truck truck = new Truck(horn, new DieselEngine());
 
         System.out.println("Bus 22");
         System.out.println(bus22.checkBeep());
@@ -36,5 +37,11 @@ viper.landToPlanet();
         System.out.println("Lambo");
         System.out.println(lambo.checkBeep());
         System.out.println(lambo.checkSpeed());
+        System.out.println("Massive Truck");
+        System.out.println(truck.checkBeep());
+        truck.sandLoading();
+        System.out.println(truck.checkSpeed());
+        truck.sandDumping();
+
     }
 }
