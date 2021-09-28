@@ -1,4 +1,5 @@
-
+import beepers.Beeper;
+import engines.Engine;
 
 public abstract class Car {
 
@@ -9,6 +10,10 @@ this.beeper = beeper;
 this.engine = engine;
 
     }
-    abstract String checkBeep();
-            abstract String checkSpeed();
+    public String checkBeep() {
+        return beeper.makeSound();
+    };
+    public String checkSpeed(){
+        return engine.makeRotation();
+    }
 }
